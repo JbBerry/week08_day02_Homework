@@ -1,25 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NewListContainer from './containers/NewListContainer';
+import ExistingListContainer from './containers/ExistingListContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1> The list to end all lists </h1>
+      <NewListContainer/>
+      <h2> Lists </h2>
+      <ExistingListContainer/>
+    </>
   );
 }
 
